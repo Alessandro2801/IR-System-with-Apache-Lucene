@@ -7,17 +7,20 @@ L’obiettivo è costruire un sistema completo di **indicizzazione e querying te
 
 ## 📁 Struttura del Progetto
 ```txt
-LuceneIndexer/
+IR-System-with-Apache-Lucene/
 ├── dataset/
 │   ├── files/                   # File .txt indicizzati (uno per film)
 │   ├── a.csv                    # Dataset originale
 │   └── genera_dataset.ipynb     # Script Python per la creazione dei file di testo
 ├── index/                       # Indice Lucene generato automaticamente
-├── pom.xml                      # File Maven di configurazione del progetto Java
-└── src/main/java/it/univ/lucene/
-├── App.java                 # Classe main: crea indice + avvia la console di ricerca
-├── Indexer.java             # Gestione della creazione dell'indice
-└── Searcher.java            # Interfaccia interattiva per l'esecuzione delle query
+├── LuceneIndexer/                       
+    ├── pom.xml                      # File Maven di configurazione del progetto Java
+    └── src/main/java/it/univ/lucene/
+        ├── App.java                 # Classe main: crea indice + avvia la console di ricerca
+        ├── Indexer.java             # Gestione della creazione dell'indice
+        └── Searcher.java            # Interfaccia interattiva per l'esecuzione delle query
+├── relazione/
+    ├── relazione.pdf/            # Relazione del progetto implementato
 
 ```
 
