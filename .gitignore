@@ -1,0 +1,25 @@
+# Lucene index directory
+index/
+
+# Build files
+*.class
+*.jar
+target/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX (se hai la relazione)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# System files
+.DS_Store
+.vscode/

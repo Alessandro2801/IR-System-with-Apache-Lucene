@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.univ.lucene</groupId>
+  <artifactId>LuceneIndexer</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>LuceneIndexer</name>
+  <url>http://maven.apache.org</url>
+  <repositories>
+  <repository>
+    <id>central</id>
+    <name>Maven Central Repository</name>
+    <url>https://repo.maven.apache.org/maven2</url>
+  </repository>
+</repositories>
+
+  <dependencies>
+  <!-- Apache Lucene: core + analyzer + queryparser -->
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-core</artifactId>
+    <version>10.3.1</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-queryparser</artifactId>
+    <version>10.3.1</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId> lucene-analysis-common</artifactId>
+    <version>10.3.1</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-codecs</artifactId>
+    <version>10.3.1</version> <!-- sostituisci con la versione di Lucene che stai usando -->
+</dependency>
+
+</dependencies>
+
+  <properties>
+    <!-- Java 21 LTS -->
+    <java.version>21</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <!-- Use release to ensure proper cross-compilation and target runtime -->
+          <release>${java.version}</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

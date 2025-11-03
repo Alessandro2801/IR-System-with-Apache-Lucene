@@ -1,0 +1,4 @@
+pandas
+tqdm
+deep-translator
+pathlib
