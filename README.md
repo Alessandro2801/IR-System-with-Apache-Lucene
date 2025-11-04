@@ -24,7 +24,7 @@ IR-System-with-Apache-Lucene/
 
 ```
 
-## 🧱 1️⃣ Creazione e Gestione del Dataset
+## Creazione e Gestione del Dataset
 
 Il dataset è basato su un file CSV (`a.csv`) contenente informazioni su film, inclusi i campi **titolo** e **trama**.  
 Il notebook `genera_dataset.ipynb` in `dataset/` si occupa di:
@@ -35,7 +35,7 @@ Il notebook `genera_dataset.ipynb` in `dataset/` si occupa di:
 - Tradurre automaticamente **titolo** e **trama** in lingua italiana.  
 - Salvare i testi tradotti come **file `.txt`** nella directory `dataset/files/`, che sarà poi indicizzata da Lucene.
 
-### 📦 Librerie Python utilizzate
+### Librerie Python utilizzate
 Nel file `requirements.txt` sono elencate le dipendenze necessarie per eseguire il notebook:
 
 ```txt
@@ -50,7 +50,7 @@ Per installarle:
 pip install -r requirements.txt
 ```
 
-## ⚙️ 2️⃣ Componenti Java del Sistema
+## Componenti Java del Sistema
 Il progetto è realizzato in Java 21 e gestito tramite Apache Maven.
 Le principali librerie utilizzate sono:
 ```txt 
@@ -65,8 +65,8 @@ lucene-codecs
 ```
 Tutte alla versione 10.3.1 (definite nel pom.xml).
 
-## 🔍 3️⃣ Funzionamento del Sistema di Indicizzazione
-### 🏗️ Indexer
+##  Funzionamento del Sistema di Indicizzazione
+###  Indexer
 La classe Indexer:
 
 
@@ -89,9 +89,9 @@ Applica un PerFieldAnalyzerWrapper:
 
 Il codec SimpleTextCodec è utilizzato per rendere l’indice leggibile e facilmente ispezionabile.
 
-### 💬 4️⃣ Interfaccia Utente su Console
+###  Interfaccia Utente su Console
 Una volta creato l’indice, l’applicazione permette di eseguire query interattive da terminale.
-#### ✏️ Esempi di query supportate
+#### Esempi di query supportate
 ```txt
 Query > titolo inception
 Query > trama "guerra mondiale"
@@ -121,8 +121,8 @@ Il sistema restituisce per ogni risultato:
 
 
 
-## 🚀 5️⃣ Esecuzione del Progetto
-### 🧩 Compilazione ed Esecuzione tramite Maven
+##  Esecuzione del Progetto
+### Compilazione ed Esecuzione tramite Maven
 Assicurati di trovarti nella directory del progetto (LuceneIndexer/), quindi esegui:
 #### Pulizia della build precedente
 ```txt
@@ -152,7 +152,7 @@ Viene creato l’indice Lucene in index/;
 Si avvia l’interfaccia per inserire query testuali.
 
 
-## 🧾 7️⃣ Requisiti e Ambiente
+##  Requisiti e Ambiente
 
 
 Java: 21
