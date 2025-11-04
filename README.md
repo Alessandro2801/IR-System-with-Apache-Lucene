@@ -23,6 +23,22 @@ IR-System-with-Apache-Lucene/
     ├── relazione.pdf/            # Relazione del progetto implementato
 
 ```
+##  Requisiti e Ambiente
+
+
+Java: 21
+
+
+Maven: ≥ 3.9
+
+
+Python: ≥ 3.9 (solo per la generazione del dataset)
+
+
+Dipendenze Lucene: versione 10.3.1
+
+
+Sistema operativo: testato su Ubuntu 24.04
 
 ## Creazione e Gestione del Dataset
 
@@ -150,22 +166,4 @@ Viene creato l’indice Lucene in index/;
 
 
 Si avvia l’interfaccia per inserire query testuali.
-
-
-##  Requisiti e Ambiente
-
-
-Java: 21
-
-
-Maven: ≥ 3.9
-
-
-Python: ≥ 3.9 (solo per la generazione del dataset)
-
-
-Dipendenze Lucene: versione 10.3.1
-
-
-Sistema operativo: testato su Ubuntu 24.04
 
