@@ -93,11 +93,7 @@ public class Indexer {
         }
     }
 
-    /**
-     * Indicizza un singolo file di testo.
-     * - Rimuove l'estensione .txt dal titolo
-     * - Rimuove riferimenti tra parentesi quadre tipo [1], [23] dal contenuto
-     */
+
     /**
      * Metodo di debug per visualizzare come un analyzer tokenizza un testo
      */
@@ -121,6 +117,9 @@ public class Indexer {
         }
     }
 
+    /**
+     * Indicizza un singolo file di testo.
+     */
     private static void indexSingleFile(IndexWriter writer, Path filePath) {
         try {
             // Nome file senza estensione

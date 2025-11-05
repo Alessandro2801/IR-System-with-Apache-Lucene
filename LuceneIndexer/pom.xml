@@ -38,7 +38,7 @@
   <dependency>
     <groupId>org.apache.lucene</groupId>
     <artifactId>lucene-codecs</artifactId>
-    <version>10.3.1</version> <!-- sostituisci con la versione di Lucene che stai usando -->
+    <version>10.3.1</version> 
 </dependency>
 
 </dependencies>
@@ -57,7 +57,6 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
-          <!-- Use release to ensure proper cross-compilation and target runtime -->
           <release>${java.version}</release>
         </configuration>
       </plugin>
